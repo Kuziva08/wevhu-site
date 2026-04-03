@@ -1,255 +1,356 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wevhuu | Music Executive & Architect of Zim Music</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
-        
-        :root { --zim-gold: #EAB308; }
-        body { 
-            background-color: #050505; 
-            color: #fafafa; 
-            font-family: 'Inter', sans-serif; 
-            background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png"); /* Subtle texture */
-        }
-        
-        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.08); }
-        .gradient-text { background: linear-gradient(to right, #fff, var(--zim-gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        
-        /* Smooth reveal animation */
-        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
-        .reveal.active { opacity: 1; transform: translateY(0); }
-
-        /* Custom scrollbar */
-        ::-webkit-scrollbar { width: 5px; }
-        ::-webkit-scrollbar-track { background: #050505; }
-        ::-webkit-scrollbar-thumb { background: var(--zim-gold); border-radius: 10px; }
-    </style>
+    <meta name="description" content="Building the infrastructure for Africa's creative economy. Artist management, music marketing, creative direction, and music curation for the SADC region.">
+    <title>The Content Company | Zimbabwe's Creative Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 </head>
-<body class="antialiased">
-
-    <div class="bg-yellow-500 text-black py-2 overflow-hidden whitespace-nowrap border-b border-black">
-        <div class="inline-block animate-marquee font-black text-[10px] uppercase tracking-[0.3em]">
-            Rebranding Zim Music • A&R Scouting Open • Scaling Talent Globally • The Fundamentals of Artist Growth •
-            Rebranding Zim Music • A&R Scouting Open • Scaling Talent Globally • The Fundamentals of Artist Growth •
-        </div>
-    </div>
-
-    <nav class="fixed w-full z-50 glass px-6 py-4 mt-2 mx-auto max-w-[95%] left-0 right-0 rounded-full top-10">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-black tracking-tighter uppercase italic">Wevhuu<span class="text-yellow-500">_</span></h1>
-            <div class="hidden md:flex space-x-8 text-[10px] font-bold uppercase tracking-widest text-gray-400">
-                <a href="#hub" class="hover:text-yellow-500 transition">The Hub</a>
-                <a href="#roster" class="hover:text-yellow-500 transition">Roster</a>
-                <a href="#submit" class="hover:text-yellow-500 transition">A&R Portal</a>
-                <a href="#curation" class="hover:text-yellow-500 transition">Curation</a>
-                <a href="#blog" class="hover:text-yellow-500 transition">Resources</a>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="LOGOS/Screenshot 2026-04-03 092621.png" alt="TCC Logo" class="nav-logo-svg">
+                    </div>
+                    <div>
+                        <h1>TCC</h1>
+                        <p class="tagline-mini">The Content Company</p>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#divisions">Divisions</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            <a href="#submit" class="bg-yellow-500 text-black px-6 py-2 rounded-full text-[10px] font-black uppercase hover:bg-white transition shadow-lg shadow-yellow-500/20">Get Signed</a>
         </div>
     </nav>
 
-    <section id="hub" class="pt-48 pb-20 px-6 max-w-7xl mx-auto min-h-screen flex flex-col justify-center reveal">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-                <span class="inline-block px-3 py-1 border border-yellow-500/30 text-yellow-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-6 rounded-full italic">Executive Manifesto</span>
-                <h2 class="text-7xl md:text-9xl font-black leading-[0.85] mb-6 tracking-tighter uppercase italic">
-                    Architect <br> of <span class="gradient-text">Zim Music.</span>
-                </h2>
-                <p class="text-gray-400 text-lg mb-8 max-w-lg leading-relaxed font-light">"I don't just manage artists; I build icons. We are rebranding the sound of a nation, one record at a time."</p>
-                
-                <div class="flex space-x-12 mb-10">
-                    <div class="group cursor-default">
-                        <p class="text-4xl font-black italic group-hover:text-yellow-500 transition">32.6K+</p>
-                        <p class="text-[9px] uppercase text-gray-500 font-bold tracking-widest">Global Reach</p>
-                    </div>
-                    <div class="group cursor-default">
-                        <p class="text-4xl font-black italic group-hover:text-yellow-500 transition">ZIM</p>
-                        <p class="text-[9px] uppercase text-gray-500 font-bold tracking-widest">HQ Location</p>
-                    </div>
-                </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-eyebrow">HARARE, ZIMBABWE</div>
+            <h1>Building the infrastructure<br>for Africa's creative economy</h1>
+            <p class="hero-subtitle">Zimbabwe's first full-service creative and talent agency</p>
+            <div class="hero-ctas">
+                <button class="btn-primary">Work With Us</button>
+                <button class="btn-secondary">Learn More</button>
             </div>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="glass p-8 rounded-[2rem] hover:bg-yellow-500 hover:text-black transition-all duration-500 cursor-default group">
-                    <h3 class="font-black text-yellow-500 group-hover:text-black mb-2 italic">A&R</h3>
-                    <p class="text-[11px] text-gray-400 group-hover:text-black/80 leading-relaxed uppercase font-bold tracking-tighter">Elite scouting for the next generation.</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission">
+        <div class="container">
+            <div class="mission-grid">
+                <div class="mission-item">
+                    <h3>Our Mission</h3>
+                    <p>Turn creative ideas into sustainable careers through strategy, storytelling, and world-class execution.</p>
                 </div>
-                <div class="glass p-8 rounded-[2rem] hover:bg-yellow-500 hover:text-black transition-all duration-500 cursor-default group">
-                    <h3 class="font-black text-yellow-500 group-hover:text-black mb-2 italic">MANAGEMENT</h3>
-                    <p class="text-[11px] text-gray-400 group-hover:text-black/80 leading-relaxed uppercase font-bold tracking-tighter">Strategy. Contracts. Career Longevity.</p>
+                <div class="mission-item">
+                    <h3>Our Promise</h3>
+                    <p>We do not just promote your work. We build your career. Label-standard professional support for emerging and established talent.</p>
                 </div>
-                <div class="glass p-8 rounded-[2rem] hover:bg-yellow-500 hover:text-black transition-all duration-500 cursor-default group">
-                    <h3 class="font-black text-yellow-500 group-hover:text-black mb-2 italic">MARKETING</h3>
-                    <p class="text-[11px] text-gray-400 group-hover:text-black/80 leading-relaxed uppercase font-bold tracking-tighter">Viral growth meets industry fundamentals.</p>
-                </div>
-                <div class="glass p-8 rounded-[2rem] hover:bg-yellow-500 hover:text-black transition-all duration-500 cursor-default group">
-                    <h3 class="font-black text-yellow-500 group-hover:text-black mb-2 italic">CURATION</h3>
-                    <p class="text-[11px] text-gray-400 group-hover:text-black/80 leading-relaxed uppercase font-bold tracking-tighter">Setting the pulse via global tastemaking.</p>
+                <div class="mission-item">
+                    <h3>Our Culture</h3>
+                    <p>We are from here. We understand Zimbabwean music, African creative sensibility, and the global platforms that amplify them.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="roster" class="py-32 bg-[#030303] reveal">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex justify-between items-end mb-16">
-                <div>
-                    <h2 class="text-5xl font-black uppercase italic tracking-tighter leading-none">The <br> <span class="text-yellow-500">Roster.</span></h2>
-                </div>
-                <p class="text-[10px] text-gray-500 font-bold uppercase tracking-widest max-w-[200px] text-right italic">A curated selection of high-performance talent.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="group relative rounded-[2.5rem] overflow-hidden glass aspect-[4/5] border-none shadow-2xl transition-all duration-700 hover:scale-[1.02]">
-                    <img src="saiiren.jpeg" alt="Saiiren" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-1000 scale-110 group-hover:scale-100">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
-                    <div class="absolute bottom-0 p-10 w-full translate-y-4 group-hover:translate-y-0 transition duration-500">
-                        <h4 class="text-3xl font-black uppercase italic tracking-tighter mb-1">Saiiren</h4>
-                        <p class="text-yellow-500 text-[10px] font-black mb-6 uppercase tracking-[0.2em]">Afro-Fusion / Management</p>
-                        <button class="w-full border border-white/20 text-white py-3 text-[10px] font-black uppercase rounded-full hover:bg-white hover:text-black transition">Open EPK</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="submit" class="py-32 px-6 reveal">
-        <div class="max-w-4xl mx-auto glass p-12 md:p-20 rounded-[3rem] border-white/5 relative overflow-hidden">
-            <div class="absolute top-0 right-0 p-10 opacity-5">
-                <i class="fa-solid fa-microphone text-[150px]"></i>
-            </div>
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black uppercase italic mb-4 tracking-tighter leading-none">A&R Gateway</h2>
-                <p class="text-gray-500 text-sm italic font-light">Stop the DMs. Submit your vision properly.</p>
-            </div>
-            <form class="space-y-6 relative z-10">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <input type="text" placeholder="ARTIST NAME" class="w-full bg-white/5 border border-white/10 p-5 rounded-2xl text-[11px] focus:border-yellow-500 outline-none uppercase font-black tracking-widest text-white">
-                    <input type="email" placeholder="EMAIL ADDRESS" class="w-full bg-white/5 border border-white/10 p-5 rounded-2xl text-[11px] focus:border-yellow-500 outline-none uppercase font-black tracking-widest text-white">
-                </div>
-                <input type="url" placeholder="PRIVATE SOUNDCLOUD OR YOUTUBE LINK" class="w-full bg-white/5 border border-white/10 p-5 rounded-2xl text-[11px] focus:border-yellow-500 outline-none uppercase font-black tracking-widest text-white">
-                <textarea rows="4" placeholder="WHAT IS YOUR FIVE-YEAR PLAN?" class="w-full bg-white/5 border border-white/10 p-5 rounded-2xl text-[11px] focus:border-yellow-500 outline-none uppercase font-black tracking-widest text-white"></textarea>
-                <button class="w-full bg-yellow-500 text-black py-6 rounded-2xl font-black uppercase tracking-[0.3em] hover:bg-white transition text-xs shadow-xl shadow-yellow-500/10">Submit Demo</button>
-            </form>
-        </div>
-    </section>
-
-    <section id="curation" class="py-32 bg-[#030303] reveal">
-        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
-            <div>
-                <h2 class="text-5xl font-black uppercase italic mb-8 leading-[0.9] tracking-tighter">The Tastemaker <br><span class="text-yellow-500">Vault.</span></h2>
-                <p class="text-gray-400 mb-10 leading-relaxed font-light italic text-lg">"My playlists aren't just collections—they're cultural statements."</p>
-                <div class="space-y-4">
-                    <div class="glass p-6 rounded-2xl flex justify-between items-center hover:border-yellow-500 transition group cursor-pointer">
-                        <div class="flex items-center space-x-4">
-                            <i class="fa-brands fa-spotify text-green-500 text-xl"></i>
-                            <span class="font-black text-[11px] uppercase tracking-[0.2em]">Afro Music Gems</span>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-label">WHO WE ARE</div>
+                    <h2>Closing Africa's Creative Infrastructure Gap</h2>
+                    <p>Zimbabwe produces world-class creative talent. But the professional infrastructure to market, manage, and monetise that talent has not existed — until now.</p>
+                    <p>The Content Company is not just an agency. It is the creative backbone of a new African music and creator economy.</p>
+                    
+                    <div class="brand-pillars">
+                        <div class="pillar">
+                            <h4>Strategy</h4>
+                            <p>Every brief is approached with clarity on audience, timing, narrative, and outcome. We think before we execute.</p>
                         </div>
-                        <i class="fa-solid fa-arrow-right text-[10px] text-gray-600 group-hover:text-yellow-500"></i>
-                    </div>
-                    <div class="glass p-6 rounded-2xl flex justify-between items-center hover:border-yellow-500 transition group cursor-pointer">
-                        <div class="flex items-center space-x-4">
-                            <i class="fa-brands fa-apple text-white text-xl"></i>
-                            <span class="font-black text-[11px] uppercase tracking-[0.2em]">Zim Freshmen 2026</span>
+                        <div class="pillar">
+                            <h4>Excellence</h4>
+                            <p>Label-standard quality. Global execution standards. Artists we work with sound and look as polished as major label acts.</p>
                         </div>
-                        <i class="fa-solid fa-arrow-right text-[10px] text-gray-600 group-hover:text-yellow-500"></i>
+                        <div class="pillar">
+                            <h4>Culture</h4>
+                            <p>Lived experience, not borrowed knowledge. We understand this market from the inside, with genuine investment in African creative culture.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="glass aspect-square rounded-[3rem] overflow-hidden border-yellow-500/10 shadow-2xl relative">
-                <div class="absolute inset-0 flex flex-col items-center justify-center space-y-4">
-                    <div class="w-20 h-20 border-2 border-yellow-500 rounded-full flex items-center justify-center animate-pulse">
-                        <i class="fa-solid fa-play text-yellow-500 ml-1 text-2xl"></i>
+                <div class="about-visual">
+                    <div class="accent-box accent-gold">
+                        <p class="accent-text">"We build careers, not just campaigns"</p>
                     </div>
-                    <p class="text-[10px] font-black uppercase tracking-[0.4em] text-gray-500 italic">Streaming Lives Here</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="blog" class="py-32 px-6 max-w-7xl mx-auto reveal">
-        <div class="flex flex-col md:flex-row justify-between items-baseline mb-16">
-            <h2 class="text-5xl font-black uppercase italic leading-none tracking-tighter">Artist Growth <br><span class="text-yellow-500">Gems.</span></h2>
-            <p class="text-[10px] font-black text-gray-500 uppercase mt-4 md:mt-0 tracking-[0.3em]">Sharing the Blueprint</p>
-        </div>
-        <div class="grid md:grid-cols-2 gap-10">
-            <article class="glass p-10 rounded-[3rem] group hover:bg-white transition-all duration-700 cursor-pointer overflow-hidden relative">
-                <div class="relative z-10">
-                    <p class="text-[10px] font-black text-gray-500 group-hover:text-black mb-6 uppercase tracking-widest tracking-[0.2em]">Marketing • 01</p>
-                    <h3 class="text-3xl font-black mb-6 group-hover:text-black transition italic uppercase leading-none tracking-tighter">Why Branding is <br> the New Platinum.</h3>
-                    <span class="text-[10px] font-black uppercase tracking-[0.3em] group-hover:text-black border-b border-yellow-500 pb-1">Listen to Gem</span>
+    <!-- Four Divisions Section -->
+    <section id="divisions" class="divisions">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">HOW WE WORK</div>
+                <h2>The Four Divisions</h2>
+                <p>One integrated ecosystem. Four specialist areas. Label-standard support across the full creative journey.</p>
+            </div>
+
+            <div class="divisions-grid">
+                <!-- Division 1 -->
+                <div class="division-card">
+                    <div class="division-logo">
+                        <img src="LOGOS/Screenshot 2026-04-03 092645.png" alt="Division 1" class="division-logo-svg">
+                    </div>
+                    <div class="division-number">01</div>
+                    <h3>The Content Lab</h3>
+                    <p class="division-subtitle">Short-Form Production · Creative Studio</p>
+                    <p class="division-description">We create the content that stops the scroll. Reels, TikTok, YouTube Shorts, visualizers, documentaries, and full creative packages for releases and brand campaigns.</p>
+                    <ul class="division-services">
+                        <li>Reels, TikTok & YouTube Shorts</li>
+                        <li>Visualizers & storytelling clips</li>
+                        <li>Filming, editing & creative packaging</li>
+                        <li>Documentary & long-form content</li>
+                    </ul>
                 </div>
-                <i class="fa-solid fa-bolt absolute -bottom-10 -right-10 text-[180px] text-white/[0.02] group-hover:text-black/5 transition duration-700"></i>
-            </article>
-            <article class="glass p-10 rounded-[3rem] group hover:bg-white transition-all duration-700 cursor-pointer overflow-hidden relative">
-                <div class="relative z-10">
-                    <p class="text-[10px] font-black text-gray-500 group-hover:text-black mb-6 uppercase tracking-widest tracking-[0.2em]">Industry • 02</p>
-                    <h3 class="text-3xl font-black mb-6 group-hover:text-black transition italic uppercase leading-none tracking-tighter">How to Survive <br> a Label Deal.</h3>
-                    <span class="text-[10px] font-black uppercase tracking-[0.3em] group-hover:text-black border-b border-yellow-500 pb-1">Listen to Gem</span>
+
+                <!-- Division 2 -->
+                <div class="division-card">
+                    <div class="division-logo">
+                        <img src="LOGOS/Screenshot 2026-04-03 092645.png" alt="Division 2" class="division-logo-svg">
+                    </div>
+                    <div class="division-number">02</div>
+                    <h3>The Audience Lab</h3>
+                    <p class="division-subtitle">Digital Marketing · Audience Growth · Strategy</p>
+                    <p class="division-description">We build audiences and drive streams using data, platform strategy, and creative campaigns built for how people actually discover music today.</p>
+                    <ul class="division-services">
+                        <li>Social media strategy & content calendars</li>
+                        <li>Spotify, Apple Music & TikTok growth</li>
+                        <li>Influencer seeding & digital rollout</li>
+                        <li>Data analytics & growth optimisation</li>
+                    </ul>
                 </div>
-                <i class="fa-solid fa-crown absolute -bottom-10 -right-10 text-[180px] text-white/[0.02] group-hover:text-black/5 transition duration-700"></i>
-            </article>
+
+                <!-- Division 3 -->
+                <div class="division-card">
+                    <div class="division-logo">
+                        <img src="LOGOS/Screenshot 2026-04-03 092645.png" class="division-logo-svg">
+                    </div>
+                    <div class="division-number">03</div>
+                    <h3>The Creative Desk</h3>
+                    <p class="division-subtitle">Artist Management · Creative Direction · Strategy</p>
+                    <p class="division-description">We develop artists holistically — from brand identity and A&R to release planning, creative oversight, and long-term career architecture.</p>
+                    <ul class="division-services">
+                        <li>A&R & song review</li>
+                        <li>Artist branding & narrative building</li>
+                        <li>Release strategy for singles & albums</li>
+                        <li>Artist camps & collaborations</li>
+                    </ul>
+                </div>
+
+                <!-- Division 4 -->
+                <div class="division-card">
+                    <div class="division-logo">
+                        <img src="LOGOS/Screenshot 2026-04-03 092645.png" alt="Division 4" class="division-logo-svg">
+                    </div>
+                    <div class="division-number">04</div>
+                    <h3>The Sound Desk</h3>
+                    <p class="division-subtitle">Music Curation · Playlist Programming · Sonic Strategy</p>
+                    <p class="division-description">We shape how music is sequenced, heard, and experienced — across streaming platforms, live events, and brand activations.</p>
+                    <ul class="division-services">
+                        <li>Playlist sequencing & metadata optimisation</li>
+                        <li>Editorial & independent playlist pitching</li>
+                        <li>Event line-up building & set flow</li>
+                        <li>Brand sonic identity & music strategy</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="pt-32 pb-10 bg-[#020202] px-6 border-t border-white/5">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-20">
-            <div class="col-span-2">
-                <h1 class="text-3xl font-black tracking-tighter uppercase italic mb-6">Wevhuu<span class="text-yellow-500">_</span></h1>
-                <p class="text-gray-500 text-sm max-w-sm font-light leading-relaxed">Scaling Zimbabwean talent to the world. A music executive, A&R, and curator focused on the fundamentals of artist growth.</p>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">WHAT WE DO</div>
+                <h2>Full-Service Creative Support</h2>
             </div>
-            <div>
-                <h4 class="text-[10px] font-black uppercase tracking-widest text-yellow-500 mb-6 italic">Connect</h4>
-                <ul class="space-y-3 text-xs font-bold text-gray-400 uppercase tracking-tighter">
-                    <li><a href="#" class="hover:text-white transition">Instagram</a></li>
-                    <li><a href="#" class="hover:text-white transition">Twitter (X)</a></li>
-                    <li><a href="#" class="hover:text-white transition">Spotify</a></li>
-                    <li><a href="#" class="hover:text-white transition">WhatsApp</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-[10px] font-black uppercase tracking-widest text-yellow-500 mb-6 italic">HQ Location</h4>
-                <p class="text-xs font-bold text-gray-400 uppercase tracking-tighter mb-4">Harare, Zimbabwe</p>
-                <p class="text-[10px] text-gray-600 font-bold uppercase tracking-widest leading-loose">Available for Consultation <br> Monday - Friday</p>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-number">01</div>
+                    <h4>Artist Management</h4>
+                    <p>End-to-end career development, positioning, and strategic direction for emerging and established talent.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">02</div>
+                    <h4>Music Marketing</h4>
+                    <p>Data-driven campaigns that build audiences, drive streams, and turn passive listeners into loyal fans.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">03</div>
+                    <h4>Content Production</h4>
+                    <p>Creative studio services for social content, visualizers, documentaries, and multimedia packages.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">04</div>
+                    <h4>Creative Direction</h4>
+                    <p>Holistic brand identity, visual strategy, and narrative development for artists and campaigns.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">05</div>
+                    <h4>Music Curation</h4>
+                    <p>Playlist programming, editorial pitching, and sonic identity strategy for platforms and brands.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">06</div>
+                    <h4>Regional Services</h4>
+                    <p>Full-service support across Zimbabwe and the SADC region for labels, collectives, and event promoters.</p>
+                </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center pt-10 border-t border-white/5">
-            <p class="text-[9px] text-gray-700 font-black uppercase tracking-[0.4em] mb-4 md:mb-0">© 2026 Wevhuu Music Executive</p>
-            <p class="text-[9px] text-gray-500 font-black uppercase tracking-[0.4em] italic">Developed by Kuziva Gambiza</p>
+    </section>
+
+    <!-- Who We Serve -->
+    <section class="serve">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">WHO WE SERVE</div>
+                <h2>Partners Across Africa</h2>
+            </div>
+
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <h4>Emerging Artists</h4>
+                    <p>Young musicians with talent and growing followings who need professional guidance and infrastructure to level up.</p>
+                </div>
+                <div class="audience-card">
+                    <h4>Mainstream Artists</h4>
+                    <p>Established acts looking for strategic support to break into regional and global markets.</p>
+                </div>
+                <div class="audience-card">
+                    <h4>Labels & Collectives</h4>
+                    <p>Record labels and artist collectives seeking external creative partnership for campaigns and curation.</p>
+                </div>
+                <div class="audience-card">
+                    <h4>Youth Brands</h4>
+                    <p>Corporates wanting to connect with culture through music and creator partnerships.</p>
+                </div>
+                <div class="audience-card">
+                    <h4>Event Organisers</h4>
+                    <p>Concert and festival operators needing curation, content, and creative direction support.</p>
+                </div>
+                <div class="audience-card">
+                    <h4>Regional Creatives</h4>
+                    <p>Content creators and producers across the SADC region building sustainable creative careers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Build Your Career?</h2>
+            <p>Let's discuss how we can support your creative journey with strategy, storytelling, and world-class execution.</p>
+            <button class="btn-primary-large">Get In Touch</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <div class="info-block">
+                        <h4>Email</h4>
+                        <p><a href="mailto:hello@thecontentcompany.co.zw">hello@thecontentcompany.co.zw</a></p>
+                    </div>
+                    <div class="info-block">
+                        <h4>Location</h4>
+                        <p>Harare, Zimbabwe<br>Serving Zimbabwe & the SADC Region</p>
+                    </div>
+                    <div class="info-block">
+                        <h4>Follow</h4>
+                        <div class="social-links">
+                            <a href="https://instagram.com/thecontentcompany.zw" target="_blank">Instagram</a>
+                            <a href="https://tiktok.com/@thecontentco.zw" target="_blank">TikTok</a>
+                            <a href="https://twitter.com/ContentCoZW" target="_blank">Twitter</a>
+                            <a href="https://linkedin.com/company/the-content-company" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tell us about your project..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>The Content Company</h3>
+                    <p>Building the infrastructure for Africa's creative economy.</p>
+                    <p class="footer-location">📍 Harare, Zimbabwe | Serving the SADC Region | Founded 2025</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#divisions">Divisions</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>Get In Touch</h4>
+                    <p><a href="mailto:hello@thecontentcompany.co.zw">hello@thecontentcompany.co.zw</a></p>
+                    <p class="footer-disclaimer">Building careers, not just campaigns.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Content Company. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <script>
-        // Scroll Reveal Script
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                }
-            }
-        }
-        window.addEventListener("scroll", reveal);
-        // Initial call
-        reveal();
-    </script>
-
-    <style>
-        @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        .animate-marquee {
-            display: inline-block;
-            animation: marquee 20s linear infinite;
-        }
-    </style>
-
+    <script src="script.js"></script>
 </body>
 </html>
