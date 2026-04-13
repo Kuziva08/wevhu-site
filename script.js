@@ -26,7 +26,7 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Hero CTA Button Functionality
+// Hero CTA Button Functionality (index.html only)
 const workWithUsBtn = document.querySelector('.hero-ctas .btn-primary');
 const learnMoreBtn = document.querySelector('.hero-ctas .btn-secondary');
 
@@ -34,23 +34,16 @@ if (workWithUsBtn) {
     workWithUsBtn.addEventListener('click', () => {
         const contactSection = document.querySelector('#contact');
         if (contactSection) {
-            contactSection.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+            contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+            window.location.href = 'index.html#contact';
         }
     });
 }
 
 if (learnMoreBtn) {
     learnMoreBtn.addEventListener('click', () => {
-        const aboutSection = document.querySelector('#about');
-        if (aboutSection) {
-            aboutSection.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+        window.location.href = 'about.html';
     });
 }
 
@@ -102,16 +95,13 @@ if (contactForm) {
     });
 }
 
-// Smooth scroll for navigation links
+// Smooth scroll for in-page anchor links only
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
 });
@@ -143,27 +133,30 @@ elementsToObserve.forEach(el => {
     observer.observe(el);
 });
 
-// Active navigation highlight based on scroll
+// Active navigation highlight based on scroll (index page only)
 window.addEventListener('scroll', () => {
-    let current = '';
     const sections = document.querySelectorAll('section[id]');
-    
+    if (!sections.length) return;
+
+    let current = '';
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
         if (window.pageYOffset >= sectionTop - 200) {
             current = section.getAttribute('id');
         }
     });
 
     navItems.forEach(item => {
-        const href = item.getAttribute('href').slice(1);
-        if (href === current) {
-            item.style.color = '#C9A84C';
-            item.style.fontWeight = '700';
-        } else {
-            item.style.color = '';
-            item.style.fontWeight = '500';
+        const href = item.getAttribute('href');
+        if (href && href.startsWith('#')) {
+            const id = href.slice(1);
+            if (id === current) {
+                item.style.color = '#C9A84C';
+                item.style.fontWeight = '700';
+            } else {
+                item.style.color = '';
+                item.style.fontWeight = '500';
+            }
         }
     });
 });
@@ -294,7 +287,7 @@ document.querySelectorAll('.division-logo-svg').forEach(logo => {
 window.addEventListener('load', () => {
     const navLogo = document.querySelector('.nav-logo-svg');
     if (navLogo) {
-        navLogo.style.animation = 'logoPulse 2s ease-in-out infinite, logoFloat 3s ease-in-out infinite';
+        // navLogo.style.animation = 'logoPulse 2s ease-in-out infinite, logoFloat 3s ease-in-out infinite';
     }
 });
 

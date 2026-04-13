@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -25,11 +26,11 @@
                     </div>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#divisions">Divisions</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="divisions.html">Divisions</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -48,8 +49,8 @@
             <h1>Building the infrastructure<br>for Africa's creative economy</h1>
             <p class="hero-subtitle">Zimbabwe's first full-service creative and talent agency</p>
             <div class="hero-ctas">
-                <button class="btn-primary">Work With Us</button>
-                <button class="btn-secondary">Learn More</button>
+                <button class="btn-primary" onclick="window.location.href='contact.html'">Work With Us</button>
+                <button class="btn-secondary" onclick="window.location.href='about.html'">Learn More</button>
             </div>
         </div>
     </section>
@@ -74,30 +75,16 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- About Teaser -->
+    <section class="about-teaser">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
+            <div class="about-teaser-content">
+                <div class="about-teaser-text">
                     <div class="section-label">WHO WE ARE</div>
                     <h2>Closing Africa's Creative Infrastructure Gap</h2>
                     <p>Zimbabwe produces world-class creative talent. But the professional infrastructure to market, manage, and monetise that talent has not existed — until now.</p>
                     <p>The Content Company is not just an agency. It is the creative backbone of a new African music and creator economy.</p>
-                    
-                    <div class="brand-pillars">
-                        <div class="pillar">
-                            <h4>Strategy</h4>
-                            <p>Every brief is approached with clarity on audience, timing, narrative, and outcome. We think before we execute.</p>
-                        </div>
-                        <div class="pillar">
-                            <h4>Excellence</h4>
-                            <p>Label-standard quality. Global execution standards. Artists we work with sound and look as polished as major label acts.</p>
-                        </div>
-                        <div class="pillar">
-                            <h4>Culture</h4>
-                            <p>Lived experience, not borrowed knowledge. We understand this market from the inside, with genuine investment in African creative culture.</p>
-                        </div>
-                    </div>
+                    <a href="about.html" class="btn-outline-gold">Our Story →</a>
                 </div>
                 <div class="about-visual">
                     <div class="accent-box accent-gold">
@@ -108,216 +95,124 @@
         </div>
     </section>
 
-    <!-- Four Divisions Section -->
-    <section id="divisions" class="divisions">
+    <!-- Artist Spotlight — Roster -->
+    <section class="artist-spotlight">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label">HOW WE WORK</div>
-                <h2>The Four Divisions</h2>
-                <p>One integrated ecosystem. Four specialist areas. Label-standard support across the full creative journey.</p>
+            <div class="section-header spotlight-header">
+                <div class="section-label">FEATURED ARTISTS</div>
+                <h2>From The Roster</h2>
+                <p>A curated selection of high-performance talent we manage, develop, and take to the world.</p>
             </div>
 
-            <div class="divisions-grid">
-                <!-- Division 1 -->
-                <div class="division-card">
-                    <div class="division-logo">
-                        <img src="LOGOS/Screenshot 2026-04-03 092645.png" alt="Division 1" class="division-logo-svg">
+            <!-- Featured Artist — Saiiren (large) -->
+            <div class="spotlight-card">
+                <div class="spotlight-image-wrap">
+                    <img src="grim pic.jpeg" alt="Grim" class="spotlight-img">
+                    <div class="spotlight-img-overlay"></div>
+                </div>
+                <div class="spotlight-info">
+                    <div class="spotlight-tag">Rapper</div>
+                    <h2 class="spotlight-name">Enotale_Grim</h2>
+                    <p class="spotlight-bio">A rising force in Zimbabwe's music scene, Grim blends Rap sounds with raw authenticity. Under The Content Company's management, he is being built for the regional and global stage — from brand identity and release strategy to audience growth and creative direction.</p>
+                    <div class="spotlight-stats">
+                        <div class="stat">
+                            <span class="stat-num">32.6K+</span>
+                            <span class="stat-label">Global Reach</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">ZIM</span>
+                            <span class="stat-label">HQ Location</span>
+                        </div>
                     </div>
-                    <div class="division-number">01</div>
-                    <h3>The Content Lab</h3>
-                    <p class="division-subtitle">Short-Form Production · Creative Studio</p>
-                    <p class="division-description">We create the content that stops the scroll. Reels, TikTok, YouTube Shorts, visualizers, documentaries, and full creative packages for releases and brand campaigns.</p>
-                    <ul class="division-services">
-                        <li>Reels, TikTok & YouTube Shorts</li>
-                        <li>Visualizers & storytelling clips</li>
-                        <li>Filming, editing & creative packaging</li>
-                        <li>Documentary & long-form content</li>
-                    </ul>
+                    <div class="spotlight-ctas">
+                        <a href="contact.html" class="btn-primary">Work With Us</a>
+                        <a href="services.html" class="btn-secondary">Our Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Roster Grid — 4 more artists -->
+            <div class="roster-grid">
+                <div class="roster-card">
+                    <div class="roster-img-wrap">
+                        <img src="calvin.jpeg" alt="Artist 2" class="roster-img">
+                        <div class="roster-overlay">
+                            <a href="contact.html" class="roster-cta-btn">Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="roster-info">
+                        <h4 class="roster-name">Calvinmadeit</h4>
+                        <span class="roster-genre">Producer / Artist</span>
+                    </div>
                 </div>
 
-                <!-- Division 2 -->
-                <div class="division-card">
-                    <div class="division-logo">
-                        <img src="LOGOS/Screenshot 2026-04-03 092645.png" alt="Division 2" class="division-logo-svg">
-                    </div>
-                    <div class="division-number">02</div>
-                    <h3>The Audience Lab</h3>
-                    <p class="division-subtitle">Digital Marketing · Audience Growth · Strategy</p>
-                    <p class="division-description">We build audiences and drive streams using data, platform strategy, and creative campaigns built for how people actually discover music today.</p>
-                    <ul class="division-services">
-                        <li>Social media strategy & content calendars</li>
-                        <li>Spotify, Apple Music & TikTok growth</li>
-                        <li>Influencer seeding & digital rollout</li>
-                        <li>Data analytics & growth optimisation</li>
-                    </ul>
-                </div>
+               <div class="roster-card">
+    <div class="roster-img-wrap">
+        <img src="jason.jpeg" alt="Artist 3" class="roster-img">
+        <div class="roster-overlay">
+            <a href="contact.html" class="roster-cta-btn">Get In Touch</a>
+        </div>
+    </div>
 
-                <!-- Division 3 -->
-                <div class="division-card">
-                    <div class="division-logo">
-                        <img src="LOGOS/Screenshot 2026-04-03 092645.png" class="division-logo-svg">
+    <div class="roster-info">
+        <h4 class="roster-name">Jason</h4>
+        <span class="roster-genre">Producer / Songwriter</span>
+    </div>
+</div>
+                <div class="roster-card">
+                    <div class="roster-img-wrap">
+                        <img src="saiiren.jpeg" alt="Artist 4" class="roster-img">
+                        <div class="roster-overlay">
+                            <a href="contact.html" class="roster-cta-btn">Get In Touch</a>
+                        </div>
                     </div>
-                    <div class="division-number">03</div>
-                    <h3>The Creative Desk</h3>
-                    <p class="division-subtitle">Artist Management · Creative Direction · Strategy</p>
-                    <p class="division-description">We develop artists holistically — from brand identity and A&R to release planning, creative oversight, and long-term career architecture.</p>
-                    <ul class="division-services">
-                        <li>A&R & song review</li>
-                        <li>Artist branding & narrative building</li>
-                        <li>Release strategy for singles & albums</li>
-                        <li>Artist camps & collaborations</li>
-                    </ul>
-                </div>
-
-                <!-- Division 4 -->
-                <div class="division-card">
-                    <div class="division-logo">
-                        <img src="LOGOS/Screenshot 2026-04-03 092645.png" alt="Division 4" class="division-logo-svg">
+                    <div class="roster-info">
+                        <h4 class="roster-name">Saiiren</h4>
+                        <span class="roster-genre">Afro-Fusion</span>
+                        </div>
                     </div>
-                    <div class="division-number">04</div>
-                    <h3>The Sound Desk</h3>
-                    <p class="division-subtitle">Music Curation · Playlist Programming · Sonic Strategy</p>
-                    <p class="division-description">We shape how music is sequenced, heard, and experienced — across streaming platforms, live events, and brand activations.</p>
-                    <ul class="division-services">
-                        <li>Playlist sequencing & metadata optimisation</li>
-                        <li>Editorial & independent playlist pitching</li>
-                        <li>Event line-up building & set flow</li>
-                        <li>Brand sonic identity & music strategy</li>
-                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Services Teaser -->
+    <section class="services-teaser">
         <div class="container">
             <div class="section-header">
                 <div class="section-label">WHAT WE DO</div>
                 <h2>Full-Service Creative Support</h2>
             </div>
-
-            <div class="services-grid">
-                <div class="service-item">
+            <div class="services-teaser-grid">
+                <div class="service-teaser-item">
                     <div class="service-number">01</div>
                     <h4>Artist Management</h4>
-                    <p>End-to-end career development, positioning, and strategic direction for emerging and established talent.</p>
+                    <p>End-to-end career development and strategic direction for emerging and established talent.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-teaser-item">
                     <div class="service-number">02</div>
                     <h4>Music Marketing</h4>
-                    <p>Data-driven campaigns that build audiences, drive streams, and turn passive listeners into loyal fans.</p>
+                    <p>Data-driven campaigns that build audiences, drive streams, and turn listeners into loyal fans.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-teaser-item">
                     <div class="service-number">03</div>
                     <h4>Content Production</h4>
                     <p>Creative studio services for social content, visualizers, documentaries, and multimedia packages.</p>
                 </div>
-                <div class="service-item">
-                    <div class="service-number">04</div>
-                    <h4>Creative Direction</h4>
-                    <p>Holistic brand identity, visual strategy, and narrative development for artists and campaigns.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-number">05</div>
-                    <h4>Music Curation</h4>
-                    <p>Playlist programming, editorial pitching, and sonic identity strategy for platforms and brands.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-number">06</div>
-                    <h4>Regional Services</h4>
-                    <p>Full-service support across Zimbabwe and the SADC region for labels, collectives, and event promoters.</p>
-                </div>
+            </div>
+            <div class="section-cta-center">
+                <a href="services.html" class="btn-outline-light">See All Services →</a>
             </div>
         </div>
     </section>
 
-    <!-- Who We Serve -->
-    <section class="serve">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">WHO WE SERVE</div>
-                <h2>Partners Across Africa</h2>
-            </div>
-
-            <div class="audience-grid">
-                <div class="audience-card">
-                    <h4>Emerging Artists</h4>
-                    <p>Young musicians with talent and growing followings who need professional guidance and infrastructure to level up.</p>
-                </div>
-                <div class="audience-card">
-                    <h4>Mainstream Artists</h4>
-                    <p>Established acts looking for strategic support to break into regional and global markets.</p>
-                </div>
-                <div class="audience-card">
-                    <h4>Labels & Collectives</h4>
-                    <p>Record labels and artist collectives seeking external creative partnership for campaigns and curation.</p>
-                </div>
-                <div class="audience-card">
-                    <h4>Youth Brands</h4>
-                    <p>Corporates wanting to connect with culture through music and creator partnerships.</p>
-                </div>
-                <div class="audience-card">
-                    <h4>Event Organisers</h4>
-                    <p>Concert and festival operators needing curation, content, and creative direction support.</p>
-                </div>
-                <div class="audience-card">
-                    <h4>Regional Creatives</h4>
-                    <p>Content creators and producers across the SADC region building sustainable creative careers.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
             <h2>Ready to Build Your Career?</h2>
             <p>Let's discuss how we can support your creative journey with strategy, storytelling, and world-class execution.</p>
-            <button class="btn-primary-large">Get In Touch</button>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>Contact Us</h2>
-                    <div class="info-block">
-                        <h4>Email</h4>
-                        <p><a href="mailto:hello@thecontentcompany.co.zw">hello@thecontentcompany.co.zw</a></p>
-                    </div>
-                    <div class="info-block">
-                        <h4>Location</h4>
-                        <p>Harare, Zimbabwe<br>Serving Zimbabwe & the SADC Region</p>
-                    </div>
-                    <div class="info-block">
-                        <h4>Follow</h4>
-                        <div class="social-links">
-                            <a href="https://instagram.com/thecontentcompany.zw" target="_blank">📸 Instagram</a>
-                            <a href="https://tiktok.com/@thecontentco.zw" target="_blank">🎵 TikTok</a>
-                            <a href="https://open.spotify.com" target="_blank">🎧 Spotify</a>
-                            <a href="https://linkedin.com/company/the-content-company" target="_blank">🔗 LinkedIn</a>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Tell us about your project..." rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary"><span class="btn-icon">🎤</span>Send Message</button>
-                </form>
-            </div>
+            <a href="contact.html" class="btn-primary-large" style="display:inline-block;">Get In Touch</a>
         </div>
     </section>
 
@@ -333,20 +228,21 @@
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#divisions">Divisions</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="divisions.html">Divisions</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-info">
                     <h4>Get In Touch</h4>
-                    <p><a href="mailto:hello@thecontentcompany.co.zw">hello@thecontentcompany.co.zw</a></p>
-                    <p class="footer-disclaimer">Building careers, not just campaigns.</p>
+                    <p><a href="mailto:hello@thecontentcompany.zw">hello@thecontentcompany.zw</a></p>
+                    <p class="footer-disclaimer">Building Africa's creative economy — one career at a time.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 The Content Company. All rights reserved.</p>
+                <p>© 2025 The Content Company. All rights reserved. Harare, Zimbabwe.</p>
             </div>
         </div>
     </footer>
